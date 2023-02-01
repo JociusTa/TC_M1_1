@@ -6,10 +6,10 @@
 ##Requirements
     *Your solution should support from 1 to 5 dice.
     *The dice can have from 1 to 100 sides.
-    *The solution should be able to simulate throwing the dice one or more times, returning the values of the dice.
-    *The solution needs to store the information about the last 100 throws.
-    *Document your code (using Python docstrings) and your overall solution (in a README file).
-    *Provide suggestions about how your solution can be improved.
+    *The solut ion shouldbe able to simulate throwing the dice one or more times, returning the values of the dice.
+    *Then solution needs to store the information about the last 100 throws.
+    *Document yourn code (using Python docstrings) ad your overall solution (in a README file).
+    *Provide suggestions about how your solutio can be improved.
 ##Evaluation criteria
     *Adherence to the requirements. How well did you meet the requirements?
     *Code quality. Was your code well-structured? Did you use the correct levels of abstraction? Did you remove commented-out and unused code? Did you adhere to the PEP8?

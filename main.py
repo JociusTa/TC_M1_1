@@ -1,16 +1,26 @@
-# This is a sample Python script.
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+throw_results = []
+class DiceRoll:
+    def __init__(self, sides=6, count=1, throws=2):
+        self.sides = sides
+        self.count = count
+        self.throws = throws
+    def roll_dice(self):
+        for throw in range(self.throws):
+            throw_result = []
+            for dice in range(self.count):
+                result = random.randint(1, self.sides)
+                throw_result.append(result)
+            throw_results.append(throw_result)
+            self.trim_results()
+    def trim_results(self):
+        if len(throw_results) > 100:
+            throw_results.pop(0)
+    def print_results(self):
+        for i, throw_result in enumerate(throw_results):
+            print("Throw {}: {}".format(i + 1, throw_result))
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+dr = DiceRoll(sides=6, count=2, throws=3)
+results = dr.roll_dice()
+dr.print_results()
