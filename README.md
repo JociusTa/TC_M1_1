@@ -1,25 +1,20 @@
-##Context
-    You are a newly hired developer in a company creating board games. 
-    Your company needs to rewrite its old engine for rolling the dice.
-    At first, this seems like a very simple task, but after the product manager
-    gives you a list of requirements, you understand why this is not just a five-minute task.
-##Requirements
-    *Your solution should support from 1 to 5 dice.
-    *The dice can have from 1 to 100 sides.
-    *The solut ion shouldbe able to simulate throwing the dice one or more times, returning the values of the dice.
-    *Then solution needs to store the information about the last 100 throws.
-    *Document yourn code (using Python docstrings) ad your overall solution (in a README file).
-    *Provide suggestions about how your solutio can be improved.
-##Evaluation criteria
-    *Adherence to the requirements. How well did you meet the requirements?
-    *Code quality. Was your code well-structured? Did you use the correct levels of abstraction? Did you remove commented-out and unused code? Did you adhere to the PEP8?
-    *Code performance. Did you use suitable algorithms and data structures to solve the problems?
-##Bonus challenges
-    *Write unit tests for code.
-    *Create a web API for your module.
-    *Expand your solution to support weighted dice.
-##Additional questions 
-    *What is Object-Oriented Programming? Select and explain two examples where using OOP concepts can improve the quality and usability of code.
-    *What is Clean Code? Select four main key concepts and explain them using real-world examples.
-    *Why do we need to document code? How can you do it? What should be provided inside the documentation?
-    *addaWhy do we test code?
+# DiceRoll
+A Python class for simulating the rolling of dice.
+
+## Attributes:
+- sides (int): The number of sides of each dice.
+- count (int): The number of dice to roll.
+- throws (int): The number of times to roll the dice.
+- throw_results (list): A list of the results of each throw, where each result
+  is a list of integers representing the value of each dice.
+
+## Methods:
+- roll_dice: Rolls the dice the specified number of times and appends the results
+  to the `throw_results` list.
+- trim_results: Trims the `throw_results` list to keep only the last 100 results.
+- print_results: Prints the results of each throw, including the total value of the
+  dice, the number of dice rolled, and the value of each dice.
+- get_input: Prompts the user for input and returns the input if it is within the
+  specified range, otherwise it returns the default value.
+- get_dice_input: Prompts the user for the number of dice, sides, and throws.
+git 
