@@ -1,8 +1,4 @@
 import random
-from fastapi import FastAPI
-app = FastAPI()
-import csv
-
 
 class DiceRoll:
     """
